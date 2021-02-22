@@ -4,6 +4,12 @@
 
 ![Terminal recording of delete.py](./assets/Demo.gif)
 
+**Try it out:**
+
+```bash
+curl https://raw.githubusercontent.com/Songtech-0912/Safe-Delete/master/installDeletePython.sh | bash
+```
+
 ## Overview
 
 It is ***so*** often the case that I misuse the `rm` command. Take this, for example:
@@ -74,7 +80,7 @@ This command can be made even more simple if you read about [using aliases](#ali
 To install this application, run this command:
 
 ```bash
-> curl https://randomscript.com/installDeletePython.sh | bash
+curl https://raw.githubusercontent.com/Songtech-0912/Safe-Delete/master/installDeletePython.sh | bash
 ```
 
 ### Development
@@ -82,7 +88,7 @@ To install this application, run this command:
 To start developing this application, run this command:
 
 ```bash
-> git clone https://Songtech-0912/Safe-Delete.git
+git clone https://github.com/Songtech-0912/Safe-Delete.git
 ```
 
 ### Aliases
@@ -113,7 +119,7 @@ If you do this, your old muscle memory of `rm` doesn't need to be forcibly retau
 
 ## Limitations
 
-Deleting multiple files, or using certain expressions that `rm` provides isn't always going to work with `delete.py`.
+Deleting multiple files, or using certain expressions that `rm` provides isn't always going to work with `delete.py`. For instance, the wildcard symbol (\*) which is used to delete multiple files only deletes the first file of the sequence using `delete.py`.
 
 
 
