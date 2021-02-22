@@ -7,7 +7,7 @@
 **Try it out:**
 
 ```bash
-curl https://raw.githubusercontent.com/Songtech-0912/Safe-Delete/master/installDeletePython.sh | bash
+curl https://raw.githubusercontent.com/Songtech-0912/Safe-Delete/master/install_delete_python.sh | bash
 ```
 
 ## Overview
@@ -80,7 +80,7 @@ This command can be made even more simple if you read about [using aliases](#ali
 To install this application, run this one-liner command:
 
 ```bash
-curl https://raw.githubusercontent.com/Songtech-0912/Safe-Delete/master/installDeletePython.sh | bash
+curl https://raw.githubusercontent.com/Songtech-0912/Safe-Delete/master/install_delete_python.sh | bash
 ```
 
 What this basically does is to run my `installDeletePython.sh` script after downloading it from github. This ensures you'll always have the latest, most up-to-date version of `delete.py` available from your computer.

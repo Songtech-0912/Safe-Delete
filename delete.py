@@ -73,7 +73,7 @@ def main():
         deleted_file += sys.argv[1]
 
     # Check if file exists
-    if os.path.isfile(deleted_file) == False:
+    if os.path.isfile(deleted_file) == False and os.path.isdir(deleted_file) == False:
         print(
             color.BOLD
             + "Sorry, the file you selected does not exist. Please try again."
