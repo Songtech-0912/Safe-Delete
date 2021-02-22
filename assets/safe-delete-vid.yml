@@ -1,0 +1,1197 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /home/songtech/Coding-Projects/Safe-Delete
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 80
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 24
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 369
+    content: "\e]0;songtech@songtech-msi:~/Coding-Projects/Safe-Delete\e\\\e]7;file://songtech-msi/home/songtech/Coding-Projects/Safe-Delete\e\\\e]0;songtech@songtech-msi:~/Coding-Projects/Safe-Delete\a\e[?2004h[songtech@songtech-msi Safe-Delete]$ "
+  - delay: 1001
+    content: '#'
+  - delay: 177
+    content: ' '
+  - delay: 149
+    content: d
+  - delay: 177
+    content: e
+  - delay: 158
+    content: l
+  - delay: 85
+    content: e
+  - delay: 183
+    content: t
+  - delay: 159
+    content: e
+  - delay: 192
+    content: .
+  - delay: 219
+    content: p
+  - delay: 192
+    content: 'y'
+  - delay: 229
+    content: ' '
+  - delay: 235
+    content: i
+  - delay: 127
+    content: s
+  - delay: 80
+    content: ' '
+  - delay: 150
+    content: r
+  - delay: 179
+    content: m
+  - delay: 206
+    content: ','
+  - delay: 149
+    content: ' '
+  - delay: 452
+    content: e
+  - delay: 112
+    content: 'n'
+  - delay: 172
+    content: h
+  - delay: 87
+    content: a
+  - delay: 152
+    content: 'n'
+  - delay: 123
+    content: c
+  - delay: 127
+    content: e
+  - delay: 182
+    content: d
+  - delay: 114
+    content: ' '
+  - delay: 96
+    content: a
+  - delay: 95
+    content: 'n'
+  - delay: 104
+    content: d
+  - delay: 105
+    content: ' '
+  - delay: 140
+    content: m
+  - delay: 125
+    content: a
+  - delay: 123
+    content: d
+  - delay: 220
+    content: ' '
+  - delay: 361
+    content: "\b\e[K"
+  - delay: 269
+    content: e
+  - delay: 221
+    content: ' '
+  - delay: 178
+    content: s
+  - delay: 150
+    content: a
+  - delay: 62
+    content: f
+  - delay: 158
+    content: e
+  - delay: 107
+    content: ' '
+  - delay: 84
+    content: "w \r"
+  - delay: 86
+    content: i
+  - delay: 101
+    content: t
+  - delay: 87
+    content: h
+  - delay: 126
+    content: ' '
+  - delay: 112
+    content: p
+  - delay: 128
+    content: 'y'
+  - delay: 97
+    content: t
+  - delay: 86
+    content: h
+  - delay: 86
+    content: o
+  - delay: 103
+    content: 'n'
+  - delay: 619
+    content: "\r\n\e[?2004l\r\e]0;songtech@songtech-msi:~/Coding-Projects/Safe-Delete\e\\\e]7;file://songtech-msi/home/songtech/Coding-Projects/Safe-Delete\e\\\e]0;songtech@songtech-msi:~/Coding-Projects/Safe-Delete\a\e[?2004h[songtech@songtech-msi Safe-Delete]$ "
+  - delay: 2486
+    content: "\r\n\e[?2004l\r\e]0;songtech@songtech-msi:~/Coding-Projects/Safe-Delete\e\\\e]7;file://songtech-msi/home/songtech/Coding-Projects/Safe-Delete\e\\\e]0;songtech@songtech-msi:~/Coding-Projects/Safe-Delete\a\e[?2004h[songtech@songtech-msi Safe-Delete]$ "
+  - delay: 1150
+    content: .
+  - delay: 84
+    content: /
+  - delay: 149
+    content: d
+  - delay: 148
+    content: e
+  - delay: 121
+    content: l
+  - delay: 104
+    content: e
+  - delay: 208
+    content: t
+  - delay: 218
+    content: e
+  - delay: 200
+    content: .
+  - delay: 192
+    content: p
+  - delay: 193
+    content: 'y'
+  - delay: 197
+    content: ' '
+  - delay: 204
+    content: t
+  - delay: 109
+    content: e
+  - delay: 126
+    content: s
+  - delay: 245
+    content: 'tfile '
+  - delay: 870
+    content: "\r\n\e[?2004l\r"
+  - delay: 49
+    content: "\e[95mYou seem to want to move the file/folder\e[0m./\e[1mtestfile\e[0m\e[95m to Trash. Are you sure?\e[0m\r\nEnter \e[91mY/N\e[0m to confirm: "
+  - delay: 1115
+    content: 'n'
+  - delay: 255
+    content: "\r\n\e[96mChosen file(s) not deleted or trashed.\e[0m\r\n"
+  - delay: 9
+    content: "\e]0;songtech@songtech-msi:~/Coding-Projects/Safe-Delete\e\\\e]7;file://songtech-msi/home/songtech/Coding-Projects/Safe-Delete\e\\\e]0;songtech@songtech-msi:~/Coding-Projects/Safe-Delete\a\e[?2004h[songtech@songtech-msi Safe-Delete]$ "
+  - delay: 1902
+    content: "\r\n\e[?2004l\r\e]0;songtech@songtech-msi:~/Coding-Projects/Safe-Delete\e\\\e]7;file://songtech-msi/home/songtech/Coding-Projects/Safe-Delete\e\\\e]0;songtech@songtech-msi:~/Coding-Projects/Safe-Delete\a\e[?2004h[songtech@songtech-msi Safe-Delete]$ "
+  - delay: 629
+    content: '#'
+  - delay: 220
+    content: ' '
+  - delay: 316
+    content: I
+  - delay: 143
+    content: t
+  - delay: 84
+    content: ' '
+  - delay: 186
+    content: d
+  - delay: 344
+    content: o
+  - delay: 125
+    content: e
+  - delay: 84
+    content: s
+  - delay: 107
+    content: 'n'
+  - delay: 110
+    content: ''''
+  - delay: 125
+    content: t
+  - delay: 92
+    content: ' '
+  - delay: 131
+    content: c
+  - delay: 127
+    content: a
+  - delay: 105
+    content: r
+  - delay: 106
+    content: e
+  - delay: 99
+    content: ' '
+  - delay: 143
+    content: i
+  - delay: 100
+    content: f
+  - delay: 173
+    content: ' '
+  - delay: 141
+    content: 'y'
+  - delay: 138
+    content: o
+  - delay: 83
+    content: u
+  - delay: 125
+    content: ' '
+  - delay: 147
+    content: t
+  - delay: 99
+    content: h
+  - delay: 86
+    content: r
+  - delay: 117
+    content: o
+  - delay: 109
+    content: w
+  - delay: 107
+    content: ' '
+  - delay: 129
+    content: r
+  - delay: 85
+    content: a
+  - delay: 109
+    content: 'n'
+  - delay: 85
+    content: d
+  - delay: 83
+    content: o
+  - delay: 85
+    content: m
+  - delay: 107
+    content: ' '
+  - delay: 107
+    content: a
+  - delay: 82
+    content: r
+  - delay: 188
+    content: g
+  - delay: 87
+    content: u
+  - delay: 178
+    content: "m \r"
+  - delay: 86
+    content: e
+  - delay: 145
+    content: 'n'
+  - delay: 85
+    content: t
+  - delay: 94
+    content: s
+  - delay: 106
+    content: ' '
+  - delay: 83
+    content: t
+  - delay: 87
+    content: h
+  - delay: 62
+    content: a
+  - delay: 63
+    content: t
+  - delay: 70
+    content: ' '
+  - delay: 245
+    content: d
+  - delay: 102
+    content: o
+  - delay: 112
+    content: 'n'
+  - delay: 114
+    content: ''''
+  - delay: 107
+    content: t
+  - delay: 86
+    content: ' '
+  - delay: 170
+    content: b
+  - delay: 158
+    content: e
+  - delay: 84
+    content: l
+  - delay: 138
+    content: o
+  - delay: 86
+    content: 'n'
+  - delay: 107
+    content: g
+  - delay: 2174
+    content: "\r\n\e[?2004l\r\e]0;songtech@songtech-msi:~/Coding-Projects/Safe-Delete\e\\\e]7;file://songtech-msi/home/songtech/Coding-Projects/Safe-Delete\e\\\e]0;songtech@songtech-msi:~/Coding-Projects/Safe-Delete\a\e[?2004h[songtech@songtech-msi Safe-Delete]$ "
+  - delay: 1197
+    content: "\r\n\e[?2004l\r\e]0;songtech@songtech-msi:~/Coding-Projects/Safe-Delete\e\\\e]7;file://songtech-msi/home/songtech/Coding-Projects/Safe-Delete\e\\\e]0;songtech@songtech-msi:~/Coding-Projects/Safe-Delete\a\e[?2004h[songtech@songtech-msi Safe-Delete]$ "
+  - delay: 376
+    content: '#'
+  - delay: 174
+    content: ' '
+  - delay: 557
+    content: w
+  - delay: 108
+    content: r
+  - delay: 78
+    content: o
+  - delay: 64
+    content: 'n'
+  - delay: 66
+    content: g
+  - delay: 877
+    content: ' '
+  - delay: 140
+    content: a
+  - delay: 84
+    content: r
+  - delay: 962
+    content: u
+  - delay: 351
+    content: "\b\e[K"
+  - delay: 104
+    content: g
+  - delay: 102
+    content: u
+  - delay: 170
+    content: m
+  - delay: 105
+    content: e
+  - delay: 83
+    content: 'n'
+  - delay: 86
+    content: t
+  - delay: 139
+    content: ' '
+  - delay: 1143
+    content: '-'
+  - delay: 85
+    content: r
+  - delay: 177
+    content: f
+  - delay: 323
+    content: "\r\n\e[?2004l\r\e]0;songtech@songtech-msi:~/Coding-Projects/Safe-Delete\e\\\e]7;file://songtech-msi/home/songtech/Coding-Projects/Safe-Delete\e\\\e]0;songtech@songtech-msi:~/Coding-Projects/Safe-Delete\a\e[?2004h[songtech@songtech-msi Safe-Delete]$ "
+  - delay: 697
+    content: .
+  - delay: 191
+    content: /
+  - delay: 1506
+    content: d
+  - delay: 161
+    content: e
+  - delay: 277
+    content: l
+  - delay: 170
+    content: e
+  - delay: 96
+    content: t
+  - delay: 129
+    content: e
+  - delay: 176
+    content: .
+  - delay: 244
+    content: p
+  - delay: 181
+    content: 'y'
+  - delay: 310
+    content: ' '
+  - delay: 195
+    content: '-'
+  - delay: 105
+    content: r
+  - delay: 172
+    content: f
+  - delay: 63
+    content: ' '
+  - delay: 155
+    content: t
+  - delay: 123
+    content: e
+  - delay: 41
+    content: s
+  - delay: 127
+    content: t
+  - delay: 197
+    content: f
+  - delay: 91
+    content: i
+  - delay: 84
+    content: l
+  - delay: 88
+    content: e
+  - delay: 1003
+    content: "\r\n\e[?2004l\r"
+  - delay: 47
+    content: "\e[95mYou seem to want to move the file/folder\e[0m./\e[1mtestfile\e[0m\e[95m to Trash. Are you sure?\e[0m\r\nEnter \e[91mY/N\e[0m to confirm: "
+  - delay: 988
+    content: 'n'
+  - delay: 342
+    content: "\r\n\e[96mChosen file(s) not deleted or trashed.\e[0m\r\n"
+  - delay: 8
+    content: "\e]0;songtech@songtech-msi:~/Coding-Projects/Safe-Delete\e\\\e]7;file://songtech-msi/home/songtech/Coding-Projects/Safe-Delete\e\\\e]0;songtech@songtech-msi:~/Coding-Projects/Safe-Delete\a\e[?2004h[songtech@songtech-msi Safe-Delete]$ "
+  - delay: 2160
+    content: '#'
+  - delay: 169
+    content: ' '
+  - delay: 853
+    content: I
+  - delay: 111
+    content: t
+  - delay: 91
+    content: ' '
+  - delay: 162
+    content: g
+  - delay: 160
+    content: i
+  - delay: 314
+    content: v
+  - delay: 204
+    content: e
+  - delay: 105
+    content: s
+  - delay: 136
+    content: ' '
+  - delay: 187
+    content: 'y'
+  - delay: 127
+    content: o
+  - delay: 84
+    content: u
+  - delay: 127
+    content: ' '
+  - delay: 92
+    content: p
+  - delay: 180
+    content: o
+  - delay: 128
+    content: w
+  - delay: 20
+    content: e
+  - delay: 107
+    content: r
+  - delay: 180
+    content: ' '
+  - delay: 321
+    content: w
+  - delay: 188
+    content: h
+  - delay: 83
+    content: e
+  - delay: 111
+    content: 'n'
+  - delay: 106
+    content: ' '
+  - delay: 173
+    content: 'y'
+  - delay: 118
+    content: o
+  - delay: 82
+    content: u
+  - delay: 157
+    content: ' '
+  - delay: 130
+    content: 'n'
+  - delay: 154
+    content: e
+  - delay: 132
+    content: e
+  - delay: 158
+    content: d
+  - delay: 84
+    content: ' '
+  - delay: 153
+    content: i
+  - delay: 22
+    content: t
+  - delay: 319
+    content: ','
+  - delay: 299
+    content: ' '
+  - delay: 150
+    content: b
+  - delay: 115
+    content: u
+  - delay: 164
+    content: t
+  - delay: 115
+    content: "  \r"
+  - delay: 381
+    content: c
+  - delay: 170
+    content: a
+  - delay: 139
+    content: u
+  - delay: 136
+    content: t
+  - delay: 128
+    content: i
+  - delay: 125
+    content: o
+  - delay: 65
+    content: 'n'
+  - delay: 210
+    content: ' '
+  - delay: 563
+    content: b
+  - delay: 173
+    content: e
+  - delay: 191
+    content: f
+  - delay: 140
+    content: o
+  - delay: 104
+    content: r
+  - delay: 81
+    content: e
+  - delay: 87
+    content: ' '
+  - delay: 161
+    content: 'y'
+  - delay: 126
+    content: o
+  - delay: 61
+    content: u
+  - delay: 129
+    content: ' '
+  - delay: 107
+    content: a
+  - delay: 101
+    content: c
+  - delay: 202
+    content: t
+  - delay: 643
+    content: "\r\n\e[?2004l\r\e]0;songtech@songtech-msi:~/Coding-Projects/Safe-Delete\e\\"
+  - delay: 5
+    content: "\e]7;file://songtech-msi/home/songtech/Coding-Projects/Safe-Delete\e\\\e]0;songtech@songtech-msi:~/Coding-Projects/Safe-Delete\a\e[?2004h[songtech@songtech-msi Safe-Delete]$ "
+  - delay: 1204
+    content: '#'
+  - delay: 186
+    content: ' '
+  - delay: 657
+    content: p
+  - delay: 125
+    content: e
+  - delay: 104
+    content: r
+  - delay: 328
+    content: m
+  - delay: 109
+    content: a
+  - delay: 85
+    content: 'n'
+  - delay: 211
+    content: e
+  - delay: 130
+    content: 'n'
+  - delay: 107
+    content: t
+  - delay: 105
+    content: ' '
+  - delay: 220
+    content: d
+  - delay: 168
+    content: e
+  - delay: 137
+    content: l
+  - delay: 108
+    content: e
+  - delay: 146
+    content: t
+  - delay: 133
+    content: e
+  - delay: 127
+    content: ' '
+  - delay: 114
+    content: c
+  - delay: 128
+    content: a
+  - delay: 142
+    content: p
+  - delay: 127
+    content: a
+  - delay: 127
+    content: b
+  - delay: 127
+    content: i
+  - delay: 124
+    content: l
+  - delay: 106
+    content: i
+  - delay: 86
+    content: t
+  - delay: 145
+    content: 'y'
+  - delay: 275
+    content: ':'
+  - delay: 188
+    content: "\r\n\e[?2004l\r\e]0;songtech@songtech-msi:~/Coding-Projects/Safe-Delete\e\\\e]7;file://songtech-msi/home/songtech/Coding-Projects/Safe-Delete\e\\\e]0;songtech@songtech-msi:~/Coding-Projects/Safe-Delete\a\e[?2004h[songtech@songtech-msi Safe-Delete]$ "
+  - delay: 796
+    content: '>'
+  - delay: 452
+    content: "\b\e[K"
+  - delay: 225
+    content: .
+  - delay: 186
+    content: /
+  - delay: 330
+    content: d
+  - delay: 184
+    content: e
+  - delay: 112
+    content: l
+  - delay: 107
+    content: e
+  - delay: 104
+    content: t
+  - delay: 125
+    content: e
+  - delay: 260
+    content: .
+  - delay: 232
+    content: p
+  - delay: 168
+    content: 'y'
+  - delay: 146
+    content: ' '
+  - delay: 182
+    content: '-'
+  - delay: 159
+    content: f
+  - delay: 143
+    content: f
+  - delay: 239
+    content: ' '
+  - delay: 299
+    content: t
+  - delay: 151
+    content: e
+  - delay: 84
+    content: s
+  - delay: 214
+    content: 'tfile '
+  - delay: 551
+    content: "\r\n\e[?2004l\r"
+  - delay: 49
+    content: "\e[32mYou seem to want to delete the file/folder\e[0m./testfile\r\nAre you \e[1;31mSURE\e[0m you want to \e[1mPERMANENTLY\e[0m delete this file??? (CTRL C to cancel)\r\nEnter Y/N to confirm: "
+  - delay: 1438
+    content: 'n'
+  - delay: 1245
+    content: "\r\n"
+  - delay: 15
+    content: "Chosen file(s) moved to Trash instead.\r\n"
+  - delay: 8
+    content: "\e]0;songtech@songtech-msi:~/Coding-Projects/Safe-Delete\e\\\e]7;file://songtech-msi/home/songtech/Coding-Projects/Safe-Delete\e\\\e]0;songtech@songtech-msi:~/Coding-Projects/Safe-Delete\a\e[?2004h[songtech@songtech-msi Safe-Delete]$ "
+  - delay: 2256
+    content: '#'
+  - delay: 153
+    content: ' '
+  - delay: 353
+    content: I
+  - delay: 135
+    content: f
+  - delay: 84
+    content: ' '
+  - delay: 146
+    content: 'y'
+  - delay: 145
+    content: o
+  - delay: 65
+    content: u
+  - delay: 126
+    content: ' '
+  - delay: 124
+    content: d
+  - delay: 86
+    content: o
+  - delay: 81
+    content: ' '
+  - delay: 192
+    content: w
+  - delay: 637
+    content: s
+  - delay: 187
+    content: "\b\e[K"
+  - delay: 163
+    content: "\b\e[K"
+  - delay: 112
+    content: s
+  - delay: 127
+    content: o
+  - delay: 63
+    content: m
+  - delay: 86
+    content: e
+  - delay: 107
+    content: t
+  - delay: 63
+    content: h
+  - delay: 105
+    content: i
+  - delay: 84
+    content: 'n'
+  - delay: 65
+    content: g
+  - delay: 151
+    content: ' '
+  - delay: 104
+    content: s
+  - delay: 169
+    content: t
+  - delay: 96
+    content: u
+  - delay: 125
+    content: p
+  - delay: 106
+    content: d
+  - delay: 102
+    content: i
+  - delay: 663
+    content: "\b\e[K"
+  - delay: 124
+    content: "\b\e[K"
+  - delay: 196
+    content: i
+  - delay: 107
+    content: d
+  - delay: 144
+    content: ','
+  - delay: 212
+    content: ' '
+  - delay: 669
+    content: i
+  - delay: 107
+    content: t
+  - delay: 82
+    content: ' '
+  - delay: 135
+    content: c
+  - delay: 150
+    content: o
+  - delay: 145
+    content: r
+  - delay: 154
+    content: r
+  - delay: 148
+    content: e
+  - delay: 186
+    content: c
+  - delay: 203
+    content: t
+  - delay: 106
+    content: s
+  - delay: 150
+    content: ' '
+  - delay: 195
+    content: "y \r"
+  - delay: 119
+    content: o
+  - delay: 65
+    content: u
+  - delay: 150
+    content: ' '
+  - delay: 819
+    content: b
+  - delay: 172
+    content: e
+  - delay: 195
+    content: f
+  - delay: 165
+    content: o
+  - delay: 61
+    content: r
+  - delay: 85
+    content: e
+  - delay: 89
+    content: ' '
+  - delay: 286
+    content: 'y'
+  - delay: 138
+    content: o
+  - delay: 82
+    content: u
+  - delay: 138
+    content: ' '
+  - delay: 168
+    content: m
+  - delay: 86
+    content: a
+  - delay: 155
+    content: d
+  - delay: 400
+    content: "\b\e[K"
+  - delay: 213
+    content: k
+  - delay: 129
+    content: e
+  - delay: 120
+    content: ' '
+  - delay: 195
+    content: a
+  - delay: 121
+    content: ' '
+  - delay: 359
+    content: b
+  - delay: 163
+    content: a
+  - delay: 64
+    content: d
+  - delay: 136
+    content: ' '
+  - delay: 570
+    content: m
+  - delay: 146
+    content: i
+  - delay: 107
+    content: s
+  - delay: 92
+    content: t
+  - delay: 206
+    content: a
+  - delay: 103
+    content: k
+  - delay: 130
+    content: e
+  - delay: 399
+    content: "\r\n\e[?2004l\r\e]0;songtech@songtech-msi:~/Coding-Projects/Safe-Delete\e\\\e]7;file://songtech-msi/home/songtech/Coding-Projects/Safe-Delete\e\\\e]0;songtech@songtech-msi:~/Coding-Projects/Safe-Delete\a\e[?2004h[songtech@songtech-msi Safe-Delete]$ "
+  - delay: 1066
+    content: .
+  - delay: 105
+    content: /
+  - delay: 167
+    content: d
+  - delay: 158
+    content: e
+  - delay: 117
+    content: l
+  - delay: 192
+    content: e
+  - delay: 121
+    content: t
+  - delay: 215
+    content: e
+  - delay: 280
+    content: '.py '
+  - delay: 588
+    content: "\r\n\e[?2004l\r"
+  - delay: 52
+    content: "\e[1m\e[91m  Oops! You didn't provide the filename as an argument!\e[0m\r\n\e[1m  THIS is how you use delete.py correctly\r\n\e[0m\r\n\e[92m\t  ./delete.py\e[0m <your-file-or-folder>\r\n\r\n\e[1m\e[93m  NOT like this:\r\n\e[0m\r\n\e[91m\t  ./delete.py\e[0m\r\n\t  ^ (no arguments)\r\n\e]0;songtech@songtech-msi:~/Coding-Projects/Safe-Delete\e\\\e]7;file://songtech-msi/home/songtech/Coding-Projects/Safe-Delete\e\\\e]0;songtech@songtech-msi:~/Coding-Projects/Safe-Delete\a\e[?2004h[songtech@songtech-msi Safe-Delete]$ "
+  - delay: 1318
+    content: '#'
+  - delay: 174
+    content: ' '
+  - delay: 198
+    content: a
+  - delay: 145
+    content: l
+  - delay: 278
+    content: "\b\e[K"
+  - delay: 273
+    content: "\b\e[K"
+  - delay: 304
+    content: L
+  - delay: 193
+    content: a
+  - delay: 106
+    content: s
+  - delay: 126
+    content: t
+  - delay: 132
+    content: ' '
+  - delay: 139
+    content: b
+  - delay: 197
+    content: u
+  - delay: 106
+    content: t
+  - delay: 83
+    content: ' '
+  - delay: 115
+    content: 'n'
+  - delay: 104
+    content: o
+  - delay: 64
+    content: t
+  - delay: 109
+    content: ' '
+  - delay: 92
+    content: l
+  - delay: 82
+    content: e
+  - delay: 106
+    content: a
+  - delay: 83
+    content: s
+  - delay: 169
+    content: t
+  - delay: 143
+    content: ','
+  - delay: 281
+    content: ' '
+  - delay: 160
+    content: i
+  - delay: 104
+    content: t
+  - delay: 94
+    content: ' '
+  - delay: 131
+    content: i
+  - delay: 306
+    content: s
+  - delay: 140
+    content: ' '
+  - delay: 220
+    content: f
+  - delay: 200
+    content: r
+  - delay: 159
+    content: e
+  - delay: 148
+    content: e
+  - delay: 153
+    content: ' '
+  - delay: 421
+    content: a
+  - delay: 99
+    content: 'n'
+  - delay: 87
+    content: d
+  - delay: 65
+    content: ' '
+  - delay: 113
+    content: o
+  - delay: 156
+    content: p
+  - delay: 91
+    content: e
+  - delay: 87
+    content: 'n'
+  - delay: 1012
+    content: '-'
+  - delay: 135
+    content: "s \r"
+  - delay: 127
+    content: o
+  - delay: 104
+    content: u
+  - delay: 63
+    content: r
+  - delay: 207
+    content: c
+  - delay: 126
+    content: e
+  - delay: 1368
+    content: '!'
+  - delay: 227
+    content: "\r\n\e[?2004l\r\e]0;songtech@songtech-msi:~/Coding-Projects/Safe-Delete\e\\\e]7;file://songtech-msi/home/songtech/Coding-Projects/Safe-Delete\e\\\e]0;songtech@songtech-msi:~/Coding-Projects/Safe-Delete\a\e[?2004h[songtech@songtech-msi Safe-Delete]$ "
+  - delay: 631
+    content: T
+  - delay: 197
+    content: r
+  - delay: 86
+    content: 'y'
+  - delay: 153
+    content: ' '
+  - delay: 119
+    content: i
+  - delay: 85
+    content: t
+  - delay: 83
+    content: ' '
+  - delay: 172
+    content: h
+  - delay: 288
+    content: "\b\e[K"
+  - delay: 131
+    content: "\b\e[K"
+  - delay: 99
+    content: "\b\e[K"
+  - delay: 91
+    content: "\b\e[K"
+  - delay: 127
+    content: "\b\e[K"
+  - delay: 111
+    content: "\b\e[K"
+  - delay: 119
+    content: "\b\e[K"
+  - delay: 111
+    content: "\b\e[K"
+  - delay: 156
+    content: '#'
+  - delay: 131
+    content: ' '
+  - delay: 350
+    content: T
+  - delay: 234
+    content: r
+  - delay: 104
+    content: 'y'
+  - delay: 121
+    content: ' '
+  - delay: 99
+    content: i
+  - delay: 106
+    content: t
+  - delay: 68
+    content: ' '
+  - delay: 173
+    content: o
+  - delay: 85
+    content: u
+  - delay: 62
+    content: t
+  - delay: 114
+    content: ' '
+  - delay: 126
+    content: a
+  - delay: 84
+    content: 'n'
+  - delay: 82
+    content: d
+  - delay: 84
+    content: ' '
+  - delay: 112
+    content: h
+  - delay: 61
+    content: e
+  - delay: 119
+    content: l
+  - delay: 154
+    content: p
+  - delay: 136
+    content: ' '
+  - delay: 121
+    content: m
+  - delay: 127
+    content: e
+  - delay: 103
+    content: ' '
+  - delay: 105
+    content: i
+  - delay: 87
+    content: t
+  - delay: 301
+    content: "\b\e[K"
+  - delay: 236
+    content: m
+  - delay: 167
+    content: p
+  - delay: 106
+    content: r
+  - delay: 121
+    content: o
+  - delay: 105
+    content: v
+  - delay: 126
+    content: e
+  - delay: 66
+    content: ' '
+  - delay: 103
+    content: i
+  - delay: 61
+    content: t
+  - delay: 103
+    content: ' '
+  - delay: 300
+    content: t
+  - delay: 122
+    content: o
+  - delay: 126
+    content: d
+  - delay: 313
+    content: a
+  - delay: 98
+    content: 'y'
+  - delay: 301
+    content: '!'
+  - delay: 797
+    content: "\r\n\e[?2004l\r\e]0;songtech@songtech-msi:~/Coding-Projects/Safe-Delete\e\\\e]7;file://songtech-msi/home/songtech/Coding-Projects/Safe-Delete\e\\\e]0;songtech@songtech-msi:~/Coding-Projects/Safe-Delete\a\e[?2004h[songtech@songtech-msi Safe-Delete]$ "
+  - delay: 370
+    content: e
+  - delay: 170
+    content: x
+  - delay: 119
+    content: i
+  - delay: 99
+    content: t
+  - delay: 381
+    content: "\r\n\e[?2004l\rlogout\r\n"
