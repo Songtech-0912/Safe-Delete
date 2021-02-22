@@ -2,7 +2,7 @@
 
 **Demo Video:**
 
-![Terminal recording of delete.py](./assets/Demo_spedup.gif)
+![Terminal recording of delete.py](./assets/Demo.gif)
 
 ## Overview
 
