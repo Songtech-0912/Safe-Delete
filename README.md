@@ -26,16 +26,16 @@ Ahem...I just deleted my precious `package.json` while trying to delete my `pack
 hello.txt
 
 > rm -rf helo.txt
-# nothing
+# no warning
 
 > rm -rf helllo.txt
-# nothing
+# no warning
 
 > rm -rf hello.tx
-# still nothing!
+# still no warning!
 ```
 
-Unfortunately, the file is still there. Or if this happens:
+Unfortunately, the file is still there, and I have no idea that I didn't delete it. Or if this happens:
 
 ```bash
 > rm -rf node_modules
@@ -77,10 +77,40 @@ This command can be made even more simple if you read about [using aliases](#ali
 
 ### Basic Install
 
-To install this application, run this command:
+To install this application, run this one-liner command:
 
 ```bash
 curl https://raw.githubusercontent.com/Songtech-0912/Safe-Delete/master/installDeletePython.sh | bash
+```
+
+What this basically does is to run my `installDeletePython.sh` script after downloading it from github. This ensures you'll always have the latest, most up-to-date version of `delete.py` available from your computer.
+
+### Install errors
+
+* You may need to open a new terminal after running the command for `delete.py` to start working
+* You will need to make sure that there is a file called `~/.profile` in your home directory
+
+### Manual Install
+
+First, clone the source code from GitHub:
+
+```bash
+git clone https://github.com/Songtech-0912/Safe-Delete.git && cd Safe-Delete
+```
+
+Then, copy the python script to `/usr/local/bin`:
+
+```bash
+cp delete.py /usr/local/bin/delete
+```
+
+Setup aliases:
+
+```bash
+# if you don't have a ~/.profile, create one
+echo "export PATH=/usr/local/bin:$PATH" > ~/.profile
+echo "alias rm='delete'" > ~/.zshrc # if you are using zsh shell (most MacOS)
+echo "alias rm='delete'" > ~/.bashrc # if you are using bash shell (most GNU/Linux)
 ```
 
 ### Development
@@ -88,7 +118,7 @@ curl https://raw.githubusercontent.com/Songtech-0912/Safe-Delete/master/installD
 To start developing this application, run this command:
 
 ```bash
-git clone https://github.com/Songtech-0912/Safe-Delete.git
+git clone https://github.com/Songtech-0912/Safe-Delete.git && cd Safe-Delete
 ```
 
 ### Aliases
@@ -105,7 +135,7 @@ The alias actually runs this command in the background:
 > delete node_modules
 ```
 
-(In this case, the aliases used were `alias rm='delte'` and `alias node_modules='my_useless_bloated_1GB_node_modules_folder'`)
+(In this case, the aliases used were `alias rm='delete'` and `alias node_modules='my_useless_bloated_1GB_node_modules_folder'`)
 
 This is something that the install script will do by default, but if you are manually installing it, you will need to do this yourself. Just open your `~/.bashrc` file (if you use bash), or `~/.zshrc` file (if you use zsh)\*, and add in this line (no space before or after the equal sign):
 
@@ -113,7 +143,7 @@ This is something that the install script will do by default, but if you are man
 alias rm='delete'
 ```
 
-\*: Fish shell aliases are something I don't know much about
+\*: Fish shell aliases are something I don't know much about, please inform me if you are experienced with it!
 
 If you do this, your old muscle memory of `rm` doesn't need to be forcibly retaught to use `delete` instead.
 
