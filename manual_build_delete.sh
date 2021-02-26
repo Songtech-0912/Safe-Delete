@@ -28,7 +28,6 @@ read -r -p $'\e[31mEnter [Y/N] to allow or prevent this: \e[0m' input
                     echo -e "You can now run delete.py as \e[36mdelete\e[0m \e[32m<yourfile.txt>\e[0m"
                     echo -e "You can also run delete.py as \e[36mrm\e[0m \e[32m<yourfile.txt>\e[0m"
                     break
-                *)
                     echo "Invalid input..."
             esac
         done

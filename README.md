@@ -147,6 +147,15 @@ alias rm='delete'
 
 If you do this, your old muscle memory of `rm` doesn't need to be forcibly retaught to use `delete` instead.
 
+## Bugs and Fixes
+
+This project has a fair number of bugs that are being fixed. However, you can be sure that more and more bugs will get fixed as the project matures!
+
+- [x] Bug with giving too many arguments fixed
+- [x] Bug with a filename with spaces fixed (so you can now say `delete "hello world.txt"`)
+- [x] Bug with `\` in filenames fixed (so `delete my\ file` is now valid)
+- [ ] Fix not deleted file bug: check if file has actually been deleted when `-ff` is used
+
 ## Limitations
 
 Deleting multiple files, or using certain expressions that `rm` provides isn't always going to work with `delete.py`. For instance, the wildcard symbol (\*) which is used to delete multiple files only deletes the first file of the sequence using `delete.py`.
