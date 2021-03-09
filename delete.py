@@ -2,7 +2,7 @@
 """
 delete.py
 A safer alternative to the rm command
-This script provides a wrapper around rm that:
+This application provides a wrapper around rm that:
 - keeps access to most of it capabilities
 - reduces argument bloat
 - warns before commiting dangerous operations
