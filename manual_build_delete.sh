@@ -31,7 +31,6 @@ read -r -p $'\e[31mEnter [Y/N] to allow or prevent this: \e[0m' input
                     echo "Invalid input..."
             esac
         done
-    [nN][oO]|[nN])
         echo Permissions were not given to script.
         echo Exiting...
         exit 1
