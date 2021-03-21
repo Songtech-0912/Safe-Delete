@@ -133,7 +133,7 @@ def main():
                 + separator.START
                 + deleted_file
                 + separator.END
-                + " ~/.local/share/Trash/files"
+                + " ~/.local/share/Trash"
             )
             os.system(command)
             print("Chosen file(s) moved to Trash instead.")
@@ -144,7 +144,7 @@ def main():
                 + separator.START
                 + deleted_file
                 + separator.END
-                + " ~/.local/share/Trash/files"
+                + " ~/.local/share/Trash"
             )
             os.system(command)
             print("Chosen file(s) moved to Trash instead.")
@@ -172,7 +172,7 @@ def main():
                 + separator.START
                 + deleted_file
                 + separator.END
-                + " ~/.local/share/Trash/files"
+                + " ~/.local/share/Trash"
             )
             os.system(command)
             print(color.CYAN + "Chosen file(s) moved to Trash." + color.END)
