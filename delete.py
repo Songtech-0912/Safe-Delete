@@ -166,7 +166,7 @@ def main():
             + color.END
         )
         answer = input("Enter " + color.RED + "Y/N" + color.END + " to confirm: ")
-        if answer == "Y" or answer == "y":
+        if answer in ("Y", "y"):
             command = (
                 "mv "
                 + separator.START
