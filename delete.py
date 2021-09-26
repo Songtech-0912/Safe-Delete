@@ -41,14 +41,6 @@ class separator:
     END = '"'
 
 
-# detect OS
-# if OS is not Unix-based, warn user
-if sys.platform == "win32":
-    print(
-        "Dear Windows user, this script is not guaranteed to work on your operating system."
-    )
-    print(color.RED + "Proceed with caution!\n" + color.END)
-
 
 def main():
     """
@@ -133,7 +125,7 @@ def main():
                 + separator.START
                 + deleted_file
                 + separator.END
-                + " ~/.local/share/Trash"
+                + trash_dir
             )
             os.system(command)
             print("Chosen file(s) moved to Trash instead.")
@@ -144,7 +136,7 @@ def main():
                 + separator.START
                 + deleted_file
                 + separator.END
-                + " ~/.local/share/Trash"
+                + trash_dir
             )
             os.system(command)
             print("Chosen file(s) moved to Trash instead.")
@@ -172,7 +164,7 @@ def main():
                 + separator.START
                 + deleted_file
                 + separator.END
-                + " ~/.local/share/Trash"
+                + trash_dir
             )
             os.system(command)
             print(color.CYAN + "Chosen file(s) moved to Trash." + color.END)
@@ -183,6 +175,29 @@ def main():
 # Run application
 if __name__ == "__main__":
     try:
+        # detect OS
+        # if OS is not Unix-based, warn user
+        if sys.platform == "win32":
+            print(
+                "Dear Windows user, this is not guaranteed to work on your operating system."
+            )
+            print(color.RED + "Proceed with caution!\n" + color.END)
+        # Trash folder detection
+        # On Macs, the trash folder is located at ~/.Trash
+        # On most Linux distros, the trash folder is located at ~/.local/share/Trash
+        # The $TRASH env variable is the preferred way to deal with this
+        # If it doesn't exist we revert to the defaults or create a custom
+        # folder called `Deleted/` in the user's home folder
+        if "TRASH" in os.environ and os.environ["TRASH"] != "":
+            trash_dir = " " + os.environ["TRASH"]
+        else:
+            if sys.platform == "darwin":
+                trash_dir = " " + os.path.expanduser("~") + "/.Trash"
+            elif sys.platform == "linux":
+                trash_dir = " " + os.path.expanduser("~") + "/.local/share/Trash"
+            else:
+                os.system("mkdir ~/Deleted")
+                trash_dir = " " + os.path.expanduser("~") + "/Deleted"
         main()
     # Gracefully exit on pressing CTRL C
     except KeyboardInterrupt:
