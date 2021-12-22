@@ -8,7 +8,7 @@ read -r -p $'\e[31mEnter [Y/N] to allow or prevent this: \e[0m' input
 case $input in
     [yY][eE][sS]|[yY])
         sudo cp delete.py /usr/local/bin/delete
-        chmod a+x /usr/local/bin/delete
+        sudo chmod a+x /usr/local/bin/delete
         echo -e "\e[1m\nWould you like to alias delete.py as 'rm'? This is recommended.\e[0m"
         while true
         do
