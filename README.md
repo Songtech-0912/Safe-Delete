@@ -2,7 +2,7 @@
 
 **Demo Video:**
 
-![Terminal recording of delete.py](https://s10.gifyu.com/images/Democ0406a06d0e2b1ab.gif)
+![Terminal recording of delete.py](https://i.ibb.co/6JSCgRK/Demo.gif)
 
 **Try it out:**
 
