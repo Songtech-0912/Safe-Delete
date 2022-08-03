@@ -6,9 +6,8 @@
 
 **Try it out:**
 
-```bash
-curl https://raw.githubusercontent.com/Songtech-0912/Safe-Delete/master/install.sh | bash
-export $TRASH = ~/.local/share/Trash # Or whatever you want it to be
+```sh
+git clone https://github.com/Songtech-0912/safe-delete.git ~/.safe-delete && ~/.safe-delete/install.sh
 ```
 
 ## Overview
