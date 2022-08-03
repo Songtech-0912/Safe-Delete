@@ -7,7 +7,7 @@
 **Try it out:**
 
 ```bash
-wget https://raw.githubusercontent.com/Songtech-0912/Safe-Delete/master/install.sh && bash install.sh && rm install.sh
+curl https://raw.githubusercontent.com/Songtech-0912/Safe-Delete/master/install.sh | bash
 export $TRASH = ~/.local/share/Trash # Or whatever you want it to be
 ```
 
